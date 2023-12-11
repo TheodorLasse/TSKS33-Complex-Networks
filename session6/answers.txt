@@ -11,7 +11,7 @@ Network 3: This is a scale-free network since the degree distribution is (sort o
 line in a log-log graph. This seems to break down at higher degrees. Line has a tilt of -2, 
 this means it has a degree of 2.
 
-Network 4: This is a star graph. The line has a tilt of -1 so the degree is 1. It seems there are only nodes
+Network 4: This is a star graph. It seems there are only nodes
 of degree 1 and 500. Maybe its one node with 500 neighbors that are leafs, that would explain
 why the clustering coefficient is 0.
 
