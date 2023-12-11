@@ -1,0 +1,69 @@
+TASK 1:
+
+Network 1: This seems to be a poisson distribution since we can see that most nodes have
+the same degree. The bump in the degree distribution in a log-log graph shows that. 
+Average degree seems to be 10 since that's the middle of the bump. There seems to be 
+cutoffs at degree 3 and 21.
+
+Network 2: Also seems to be a poisson distribution, same as above. Also average degree of 10.
+
+Network 3: This is a scale-free network since the degree distribution is (sort of) a straight
+line in a log-log graph. This seems to break down at higher degrees. Line has a tilt of -2, 
+this means it has a degree of 2.
+
+Network 4: This is a scale-free network since the degree distribution is a straight line
+in a log-log graph. The line has a tilt of -1 so the degree is 1. It seems there are only nodes
+of degree 1 and 500. Maybe its one node with 500 neighbors that are leafs, that would explain
+why the clustering coefficient is 0.
+
+Network 5: There is no degree distribution, this must be something else. Maybe a regular graph.
+
+Network 6: There is also no degree distribution, but the clustering coefficient is 1. This 
+could be a complete graph of degree 49.
+
+Network 7: This seems to be a scale-free network and the tilt seems to be -1.33.
+
+Network 8: This looks like a poisson network due to the bump in the degree graph.
+
+
+TASK 2:
+
+The sampling is not quite uniform. The first node is chosen at random, then a random neighbor of
+that node is chosen, so more popular nodes have a higher chance at being picked since they are
+more likely to be someone's neighbor. 83% of the edges are positive and roughly 17% are negative.
+The structural balance seems to hold for this network since almost all of the sampled triangles
+are strongly balanced.
+
+TASK 3:
+
+a) The effective diameter of the network before rewiring is 224.75 and 6.6 after rewiring.
+b) The effective diameter of the Watts-Strogatz network is 44.5 and 6.6 after rewiring.
+c) The effective diameter of the second Watts-Strogatz network is 11.6 and 6.6 after rewiring.
+d) The effective diameter of the scale-free network is 4.58 and 4.63 after rewiring.
+e) The effective diameter of the amazon network is 10.7 and 6.7 after rewiring.
+
+Increase node count 100 times:
+a) The effective diameter of the network before rewiring is 22500 and 10.75 after rewiring.
+b) The effective diameter of the Watts-Strogatz network is 85.8 and 10.7 after rewiring.
+c) The effective diameter of the second Watts-Strogatz network is 18.6 and 10.6 after rewiring.
+d) The effective diameter of the scale-free network is 4.73 and 4.68 after rewiring.
+
+c and d seem to have the small world property and b seems to aquire it with rewirings. In the
+case of the scale-free network (d) this can be explained by the existance of hubs, i.e
+power laws. In the case of b and c, they are Watts-Strogatz networks which always produce
+small-world networks. The amazon network seems to be a small-world which seems reasonable
+since there exists "hubs" in that network.
+
+TASK 4:
+
+The dataset is slightly assortative before rewiring, but is then neutral after the random
+rewiring. The poisson network is neutral both before and after the rewiring.
+
+TASK 5:
+
+I think the blocks of black and white represents groupings of votes, so when put into
+gephi there should be two distinct groupings. When put into gephi the two groups are
+clearly distinct even though there is no ground truth, as expected.
+
+The groupings in the cancer data fits well with the ground truth, they are clearly
+seperated by color. Though some of the groups are less distinct from each other.
